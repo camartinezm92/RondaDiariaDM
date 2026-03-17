@@ -40,6 +40,8 @@ export const SERVICES = [
   "Cirugía",
   "Esterilización",
   "Hospitalizacion",
+  "Imágenes Diagnósticas",
+  "Odontología",
   "Pasillo",
   "Recuperación",
   "UCI Adultos Intensivo o Intemedios"
@@ -49,6 +51,8 @@ export const SERVICES = [
 export const CUBICLE_REQUIRED_SERVICES = [
   "Cirugía",
   "Hospitalizacion",
+  "Imágenes Diagnósticas",
+  "Odontología",
   "Recuperación",
   "UCI Adultos Intensivo o Intemedios"
 ];
@@ -102,6 +106,7 @@ export const EQUIPMENT_LIST: Equipment[] = [
   },
   { id: 'centrifugas', name: 'Centrífugas', category: 'Laboratorio' },
   { id: 'colch-anti', name: 'Colchones Antiescaras', category: 'Mobiliario' },
+  { id: 'comp-odon', name: 'Compresor Odontológico', category: 'Odontología' },
   { id: 'congelador', name: 'Congelador', category: 'Laboratorio' },
   { 
     id: 'eme-desf', 
@@ -114,7 +119,9 @@ export const EQUIPMENT_LIST: Equipment[] = [
       { id: 'acc-lat-ecg', name: 'Latiguillos ECG' },
     ]
   },
+  { id: 'dest-agua', name: 'Destilador de Agua', category: 'Laboratorio' },
   { id: 'digitalizador', name: 'Digitalizador', category: 'Imagenología' },
+  { id: 'dinamometro', name: 'Dinamómetro', category: 'Diagnóstico' },
   { 
     id: 'qui-ele', 
     name: 'Electrobisturí', 
@@ -138,10 +145,12 @@ export const EQUIPMENT_LIST: Equipment[] = [
       { id: 'acc-pap', name: 'Papel' },
     ]
   },
+  { id: 'electroencefalografo', name: 'Electroencefalógrafo', category: 'Diagnóstico' },
   { id: 'eq-hemato', name: 'Equipo de Hematología', category: 'Laboratorio' },
-  { id: 'eq-org', name: 'Equipo de Órganos y Sentidos', category: 'Diagnóstico' },
+  { id: 'eq-org', name: 'Equipo de Órganos', category: 'Diagnóstico' },
   { id: 'eq-quimica', name: 'Equipo de Química', category: 'Laboratorio' },
   { id: 'rx-port', name: 'Equipo de Rayos X Portátil', category: 'Imagenología' },
+  { id: 'esterilizador', name: 'Esterilizador', category: 'Esterilización' },
   { id: 'fluj', name: 'Flujómetros', category: 'Gases' },
   { 
     id: 'fonendoscopio', 
@@ -219,9 +228,12 @@ export const EQUIPMENT_LIST: Equipment[] = [
       { id: 'acc-sop', name: 'Sujeción' },
     ]
   },
+  { id: 'pieza-alta', name: 'Pieza de Alta Velocidad', category: 'Odontología' },
+  { id: 'pieza-baja', name: 'Pieza de Mano de Baja', category: 'Odontología' },
   { id: 'pipetas', name: 'Pipetas Automáticas', category: 'Laboratorio' },
   { id: 'refrigeradores', name: 'Refrigeradores', category: 'Laboratorio' },
   { id: 'reg-vac', name: 'Regulador de Vacío', category: 'Vía Aérea' },
+  { id: 'selladora', name: 'Selladora Manual', category: 'Esterilización' },
   { id: 'silla-ruedas', 
   name: 'Sillas de Ruedas', 
   category: 'Mobiliario',
@@ -236,7 +248,7 @@ export const EQUIPMENT_LIST: Equipment[] = [
    },
   { 
     id: 'succ-cir', 
-    name: 'Succionador de Cirugía', 
+    name: 'Succionador QX', 
     category: 'Vía Aérea',
     accessories: [
       { id: 'acc-vaso1', name: 'Vaso Recolector 1' },
@@ -261,15 +273,16 @@ export const EQUIPMENT_LIST: Equipment[] = [
   name: 'TAC', 
   category: 'Imagenología',
   accessories: [
-      { id: 'acc-tac', name: 'Comunicacion' },
-      { id: 'acc-tac', name: 'Calibracion' },
-      { id: 'acc-tac', name: 'Temperatura' },
+      { id: 'acc-tac-com', name: 'Comunicacion' },
+      { id: 'acc-ta-cal', name: 'Calibracion' },
+      { id: 'acc-tac-tem', name: 'Temperatura' },
     ]
   },
   { id: 'tallimetro', name: 'Tallímetro', category: 'Diagnóstico' },
   { id: 'tens', name: 'Tensiómetro', category: 'Diagnóstico' },
   { id: 'term-dig', name: 'Termómetro Digital', category: 'Diagnóstico' },
   { id: 'termohigrometro', name: 'Termohigrómetros', category: 'Diagnóstico' },
+  { id: 'unidad-odon', name: 'Unidad Odontológica', category: 'Odontología' },
   { 
     id: 'sop-vent-adult', 
     name: 'Ventilador Mecánico', 
